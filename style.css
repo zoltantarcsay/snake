@@ -1,0 +1,25 @@
+#canvas {
+    position: relative;
+    width: 480px;
+    height: 320px;
+    background: #fff;
+    border: 1px solid #aaa;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.snake-cell {
+    position: absolute;
+    background: #000;
+    width: 10px;
+    height: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#start {
+    margin: 15px;
+    font-size: 1em;
+}
