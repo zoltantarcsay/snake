@@ -49,7 +49,7 @@ class Snake {
         this.onEat = null;
 
         for (let i = 0; i < initialSize; i++) {
-            const cell = new SnakeCell(Math.floor(canvasHeight / 2) + i, Math.floor(canvasWidth / 2));
+            const cell = new SnakeCell(Math.floor(canvasWidth / 2) + i, Math.floor(canvasHeight / 2));
             this.cells.unshift(cell);
         }
     }
@@ -161,5 +161,6 @@ function init() {
     }
 
     snake = new Snake(5);
+    scoreElement.textContent = 0;
     snake.onEat = score => scoreElement.textContent = score;
 }
